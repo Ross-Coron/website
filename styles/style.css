@@ -1,0 +1,108 @@
+/* CSS styles shared between pages ------------------------------------------ */
+/* SCSS variables */
+/* SCSS inheritance */
+#preamble, #profile_picture, .table {
+  margin: auto; }
+
+/* Increases space between social media icons and text in Navbar */
+#logo {
+  padding-left: 25px; }
+
+/* Ensures content is not hidden behind navbar */
+body {
+  padding-top: 100px; }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  display: none;
+  padding-top: 25px; }
+
+/* Media query - displays footer only when in print mode */
+@media print {
+  .footer {
+    display: block; } }
+#preamble {
+  width: 80%;
+  text-align: justify; }
+
+/* From index.html ---------------------------------------------------------- */
+/* Aligns social media icons to Navbar text */
+img {
+  vertical-align: bottom; }
+
+p {
+  margin-top: 20px; }
+
+/* SCSS nesting */
+div p a {
+  background-color: #B0E0E6;
+  color: black; }
+
+/* Changes profile picture size and centers */
+#profile_picture {
+  border: 2.5px solid black;
+  width: 75%;
+  display: block; }
+
+/* publications.html -------------------------------------------------------- */
+h3 {
+  text-align: center;
+  padding-bottom: 50px; }
+
+.table {
+  font-size: 12px;
+  width: 95%; }
+
+.table-space {
+  padding-top: 25px; }
+
+.table-name {
+  text-align: center;
+  font-size: 16px; }
+
+/* programming.html --------------------------------------------------------- */
+.card {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  margin-top: 1%; }
+
+/* career.html -------------------------------------------------------------- */
+ul.timeline {
+  list-style-type: none;
+  position: relative; }
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400; }
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px; }
+
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400; }
+
+/* Increases spacing between institute name and months */
+p.float-right {
+  position: relative;
+  left: 50px; }
+
+/*# sourceMappingURL=style.css.map */
